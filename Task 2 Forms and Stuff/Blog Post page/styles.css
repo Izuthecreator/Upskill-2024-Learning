@@ -1,0 +1,71 @@
+#header {
+    display: flex;
+    gap: 300px;
+    justify-content: space-between;
+    background-color: bisque;
+    padding-top: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 16px;
+    border-radius: 15px;
+}
+
+body {
+    font-family: Poppins;
+}
+
+nav {
+    display: flex;
+    gap:16px;
+    
+}
+
+.point {
+    font-weight: 700;
+}
+
+.content-container {
+    display: flex;
+    gap: 100px;
+
+}
+
+aside {
+    padding: 16px;
+    border: solid 0px;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+
+article {
+    width: 70%;
+    padding: 16px;
+}
+
+footer {
+    background-color: rgb(5, 38, 19);
+    display: flex;
+}
+
+.footer {
+    color: white;
+}
+
+.footer div {
+    display: flex;
+}
+
+a {
+    font-size: 16px;
+    color: white;
+}
+
+#navlink {
+    color: black;
+}
+
+#image {
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 20px;
+}
