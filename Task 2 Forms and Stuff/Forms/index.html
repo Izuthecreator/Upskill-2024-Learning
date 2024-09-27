@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="./styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
     <title>User Form</title>
 </head>
 <body>
@@ -16,8 +20,9 @@
             <section>
                 <label for="name">What's your name?</label>
                 <br/>
-                <input type="text" name="name" placeholder="First Name"/>
-                <input type="text" name="name" placeholder="Last Name"/>
+                
+                <input type="text" name="name" placeholder="First Name" required/>
+                <input type="text" name="name" placeholder="Last Name" required/>
             </section>
 
             <hr/>
@@ -25,7 +30,7 @@
             <section>
                 <label for="Email">I would like to reach out to you later</label>
                 <br/>
-                <input type="email" name="Email" placeholder="Enter your Email">
+                <input type="email" name="Email" placeholder="Enter your Email" required>
             </section>
             <hr>
 
@@ -40,14 +45,14 @@
             <section>
                 <label for="Gender">What's your Gender</label>
                 <br>
-                <input type="radio" name="Gender"> Male
-                <input type="radio" name="Gender"> Female
+                <input type="radio" name="Gender" required> Male
+                <input type="radio" name="Gender" required> Female
             </section>
             <hr>
 
 
             <section>
-                <label for="Hobbies">What're your Hobbies?</label>
+                <label for="Hobbies">Which of these are your Hobbies?</label>
                 <br>
                 <input type="checkbox" name="Hobbies"> Reading
                 <br>
@@ -56,20 +61,33 @@
                 <input type="checkbox" name="Hobbies"> Sports
                 <br>
                 <input type="checkbox" name="Hobbies"> Cooking
-                <br>
+                <br/>
+                <br/>
+                Other: <input type="text" name="Hobbies" placeholder="Enter other hobbies"> 
+                <br/>
             </section>
+            <hr/>
 
             <section>
-                <label for="Favorite color">What's your favorite color?</label>
+                <label for="Favorite color">What's your most rated movie genre?</label>
+                <select required>
+                    <option ><Select:disabled></Select:disabled></option>
+                    <option>Action</option>
+                    <option>Comedy</option>
+                    <option>Drama</option>
+                    <option>Science Fiction</option>
+                </select>
             </section>
+            <hr/>
 
             <section>
                 <label for="About yourself">Tell me a little more about yourself</label>
+                <br/>
+                <textarea name="About yourself" placeholder="Type here"></textarea>
             </section>
+            <hr/>
 
-            <section>
-                <label for="Newsletter">Would you like to receive newsletters from me?</label>
-            </section>
+            <button type="submit">Submit</button>
         </form>
     </main>
 
