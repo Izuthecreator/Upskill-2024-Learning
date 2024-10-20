@@ -33,6 +33,7 @@ nav {
 
 a {
     color: white;
+    text-decoration: none;
     /* text-underline-offset: 0; */
 }
 .nav-dropdown {
@@ -127,6 +128,8 @@ a {
     background-color: #68bbb7; /* Slightly darker shade on hover */
 }
 
+/* THE NEXT HERO SECTION!!!! */
+
 .hero-2 {
     flex-direction: row;
     /* height: 200px; */
@@ -173,7 +176,66 @@ a {
     border-radius: 30px;
     cursor: pointer;
     font-size: 1.2rem;
+    flex-grow: 1;
 }
+
 p {
     font-size: 1.2rem;
+}
+
+.share-cont {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.share {
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+}
+
+.card-2 {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+/* BROWSE TOPICS SECTION */
+.browse-topics {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.browse-topics-div {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    border-bottom: 0.25px solid rgb(228, 228, 228);
+    padding: 1rem;
+}
+
+.browse-topics-links {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 64px;
+    font-size: 1.2rem;
+    
+}
+
+.cards-holder {
+    width: 100%;
+    flex-direction: row;
+    gap: 32px;
+    padding: 2rem 8rem;
 }
